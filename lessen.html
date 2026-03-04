@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessen — Pilates Ravenstein</title>
+  <meta name="description" content="Groepslessen, privélessen, duo lessen, stoel pilates en bedrijfstrainingen bij Pilates Ravenstein.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="ace8f019-b3d6-4575-afe0-54f9a8deb7fc"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            taupe: { DEFAULT: '#8B7D6B', light: '#A89B8C', dark: '#6B5F50', accent: '#B5A48B' },
+            warm: { white: '#FAFAF7', cream: '#F5F0EB', black: '#2D2A26', muted: '#6B6560' }
+          },
+          fontFamily: { serif: ['Lora', 'serif'], sans: ['Raleway', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Raleway', sans-serif; color: #2D2A26; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Lora', serif; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .fade-in { opacity: 1; transform: none; transition: none; } }
+  </style>
+</head>
+<body class="bg-warm-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-taupe/10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+        <img src="images/logo-icon.png" alt="Pilates Ravenstein logo" class="h-10 md:h-12 rounded-full">
+        <span class="font-serif text-lg md:text-xl text-warm-black font-medium hidden sm:block">Pilates Ravenstein</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Home</a>
+        <a href="lessen.html" class="text-warm-black font-medium text-sm tracking-wide uppercase border-b-2 border-taupe cursor-pointer">Lessen</a>
+        <a href="massage.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Massage</a>
+        <a href="tarieven.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Tarieven</a>
+        <a href="contact.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Contact</a>
+        <a href="contact.html#kennismaking" class="bg-taupe text-white px-5 py-2.5 rounded-sm hover:bg-taupe-dark transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide">Gratis Proefles</a>
+      </div>
+      <button id="menuBtn" class="md:hidden cursor-pointer p-2" aria-label="Menu openen">
+        <svg class="w-6 h-6 text-warm-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-taupe/10 px-4 pb-4">
+      <a href="index.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Home</a>
+      <a href="lessen.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Lessen</a>
+      <a href="massage.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Massage</a>
+      <a href="tarieven.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Tarieven</a>
+      <a href="contact.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Contact</a>
+      <a href="contact.html#kennismaking" class="block mt-3 text-center bg-taupe text-white px-5 py-3 rounded-sm cursor-pointer font-medium">Gratis Proefles</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-28 md:pt-36 pb-12 md:pb-16 bg-warm-cream">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Ons aanbod</p>
+      <h1 class="font-serif text-4xl md:text-5xl text-warm-black mb-4">Lessen</h1>
+      <p class="text-warm-muted max-w-2xl mx-auto leading-relaxed">Van groepslessen tot persoonlijke begeleiding — er is voor iedereen een passende les.</p>
+    </div>
+  </section>
+
+  <!-- Groepslessen -->
+  <section class="py-16 md:py-24 fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Groepsles</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Pilates groepslessen op de mat</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">In onze Pilates groepslessen werk je individueel aan je oefeningen, maar wel in een groepssetting. Elke les biedt de mogelijkheid om Pilates oefeningen uit te voeren op jouw eigen niveau, ongeacht of je een beginner bent of al langer Pilates beoefent.</p>
+        <p class="text-warm-muted leading-relaxed">Je kunt op elk moment aansluiten bij de lessen en de oefeningen uitvoeren volgens de basisprincipes van Pilates, aangepast aan jouw persoonlijke niveau.</p>
+      </div>
+      <div>
+        <img src="images/home4.jpg" alt="Pilates groepsles" class="w-full rounded-sm shadow-lg" style="filter: grayscale(100%);" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Techniekles -->
+  <section class="py-16 md:py-24 bg-warm-cream fade-in">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Verdieping</p>
+      <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Techniekles</h2>
+      <p class="text-warm-muted leading-relaxed mb-4">In deze techniekles behandelen we oefeningen en/of bewegingen uit de huidige les waar je in de les zelf tegenaan loopt. Dit kan zijn door een tijdelijke of langdurige beperking, vragen over een oefening en/of beweging — de uitvoering ervan — of de noodzaak van een aanpassing voor jou.</p>
+      <p class="text-warm-muted leading-relaxed mb-4">Neem je deel aan de huidige groepsles dan is deze les kosteloos. Deze les is voor maximaal 5 deelnemers en aanmelding is noodzakelijk.</p>
+    </div>
+  </section>
+
+  <!-- Privé & Duo -->
+  <section id="prive" class="py-16 md:py-24 fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <img src="images/home5.jpg" alt="Privéles Pilates" class="w-full rounded-sm shadow-lg" style="filter: grayscale(100%);" loading="lazy">
+      </div>
+      <div class="order-1 md:order-2">
+        <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Persoonlijk</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Privé & Duo lessen</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">Door de individuele aandacht haal je veel meer effect uit de oefeningen. Het oefenprogramma wordt op maat samengesteld naar jouw doelen en binnen je mogelijkheden.</p>
+        <p class="text-warm-muted leading-relaxed mb-4">De privélessen zijn aan te bevelen als je net met Pilates start. Dit geeft je een goede basis. Verder kan het je helpen, om als je de groepslessen volgt, af en toe net die paar extra correcties of aanwijzingen te krijgen.</p>
+        <p class="text-warm-muted leading-relaxed mb-4">Het is ook mogelijk om samen met een vriend of vriendin een Pilates les te volgen. De persoonlijke aandacht is gelijk aan die van een privéles.</p>
+        <p class="text-warm-muted leading-relaxed">De privé en duo lessen worden gegeven op locatie Ravenstein.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilates on the Ball -->
+  <section class="py-16 md:py-24 bg-warm-cream fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Swiss Ball</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Pilates on the Ball</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">In een aantal lessen wordt gebruik gemaakt van een Swiss Ball. Door de instabiele ondergrond train je de kernspieren optimaal, dit doordat je lichaam probeert het evenwicht te bewaren.</p>
+        <p class="text-warm-muted leading-relaxed">Door Pilates oefeningen met een Swiss ball uit te voeren belasten wij spieren die anders moeilijker te bereiken zijn.</p>
+      </div>
+      <div>
+        <img src="images/home6.jpg" alt="Pilates Swiss Ball" class="w-full rounded-sm shadow-lg" style="filter: grayscale(100%);" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stoel Pilates / Senioren -->
+  <section id="senioren" class="py-16 md:py-24 fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <img src="images/home3.jpg" alt="Stoel Pilates voor senioren" class="w-full rounded-sm shadow-lg" style="filter: grayscale(100%);" loading="lazy">
+      </div>
+      <div class="order-1 md:order-2">
+        <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Senioren</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Stoel Pilates</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">Ouder worden gaat voor de meeste onder ons helaas gepaard met natuurlijke achteruitgang van stabiliteit, flexibiliteit en spiermassa. In de Pilates les voor senioren wordt speciaal aandacht gegeven aan het trainen van spieren zoals je deze in het dagelijks leven gebruikt.</p>
+        <p class="text-warm-muted leading-relaxed mb-4">Daardoor worden gewrichten soepeler, je gevoel voor evenwicht wordt beter, zodat je gemakkelijker de gewone dagelijkse dingen kunt blijven doen.</p>
+        <p class="text-warm-muted leading-relaxed">Ook bij senioren die nog nooit eerder Pilates hebben gedaan levert Pilates een positief effect op de gezondheid en bewegelijkheid.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zorgcoöperatie -->
+  <section class="py-12 md:py-16 bg-warm-cream fade-in">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
+      <img src="images/logo-zorgcoop.png" alt="Zorgcoöperatie Ravenstein" class="h-16 md:h-20" loading="lazy">
+      <div>
+        <h3 class="font-serif text-2xl text-warm-black mb-3">Stoel Pilates — Zorgcoöperatie Ravenstein</h3>
+        <p class="text-warm-muted leading-relaxed text-sm">Vanaf 2 december 2025 geeft Pilates Ravenstein op dinsdagochtend van 10.45–11.45 uur een wekelijkse Stoel Pilates-les voor leden van de Zorgcoöperatie Ravenstein, op locatie Valkenburcht. Deelname is alleen voor leden van de <a href="https://zorgcooperatieravenstein.nl/" target="_blank" rel="noopener" class="text-taupe hover:text-taupe-dark underline cursor-pointer">Zorgcoöperatie Ravenstein</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bedrijven -->
+  <section id="bedrijven" class="py-16 md:py-24 fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Zakelijk</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Pilates voor bedrijven</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">Een gezonde werkplek begint bij vitaal personeel. Hoe beter jouw medewerkers zich voelen, hoe makkelijker ze presteren, samenwerken en groeien.</p>
+        <p class="text-warm-muted leading-relaxed mb-6">Langdurig zitten, stress en werkdruk zorgen vaak voor verkrampte spieren, een verzwakt lichaam en een verstoorde balans. Pilates biedt hierbij een perfecte aanpak.</p>
+        <ul class="space-y-3 text-warm-muted text-sm">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Vermindering rug-, nek- en schouderklachten</li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Verbetering houding, ademhaling en concentratie</li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Beter omgaan met werkstress</li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Verhoging in productiviteit</li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Leidt tot minder ziekteverzuim</li>
+        </ul>
+        <p class="text-warm-muted leading-relaxed mt-6 text-sm">Ieder bedrijf is uniek, daarom stemmen we ons aanbod precies af op jullie wensen. <a href="contact.html" class="text-taupe hover:text-taupe-dark underline cursor-pointer">Neem vrijblijvend contact op</a>.</p>
+      </div>
+      <div>
+        <img src="images/bedrijf-ontwerp.jpg" alt="Pilates voor bedrijven" class="w-full rounded-sm shadow-lg" style="filter: grayscale(100%);" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- BFNL -->
+  <section class="py-8 md:py-12 bg-warm-cream">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
+      <p class="text-warm-muted text-sm mb-4">Aangesloten bij</p>
+      <img src="images/bfnl-logo.png" alt="Body & Fitness Nederland" class="h-10 md:h-14 mx-auto" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Lesrooster -->
+  <section class="py-16 md:py-24 fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Wanneer</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black">Lesrooster</h2>
+      </div>
+
+      <!-- Ravenstein -->
+      <div class="mb-12">
+        <h3 class="font-serif text-xl text-warm-black mb-4">Locatie Ravenstein</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="border-b-2 border-taupe/20">
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Dag</th>
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Ochtend</th>
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Middag</th>
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Avond</th>
+              </tr>
+            </thead>
+            <tbody class="text-warm-muted">
+              <tr class="border-b border-taupe/10"><td class="py-3 px-4 font-medium text-warm-black">Maandag</td><td class="py-3 px-4">09.00–10.00<br>10.30–11.30</td><td class="py-3 px-4">14.00–15.00<br><span class="text-xs text-taupe">(op uitnodiging)</span></td><td class="py-3 px-4">20.30–21.30</td></tr>
+              <tr class="border-b border-taupe/10"><td class="py-3 px-4 font-medium text-warm-black">Woensdag</td><td class="py-3 px-4">10.30–11.30</td><td class="py-3 px-4">—</td><td class="py-3 px-4">19.30–20.30<br>20.30–21.30 <span class="text-xs text-taupe">(op uitnodiging, Swiss Ball)</span></td></tr>
+              <tr class="border-b border-taupe/10"><td class="py-3 px-4 font-medium text-warm-black">Donderdag</td><td class="py-3 px-4">09.00–10.00 <span class="text-xs text-taupe">(Swiss Ball)</span><br>10.30–11.30 <span class="text-xs text-taupe">(Swiss Ball)</span></td><td class="py-3 px-4">—</td><td class="py-3 px-4">—</td></tr>
+              <tr><td class="py-3 px-4 font-medium text-warm-black">Vrijdag</td><td class="py-3 px-4">09.00–10.00<br>10.30–11.30</td><td class="py-3 px-4">14.00–15.00 <span class="text-xs text-taupe">(Senioren/stoel)</span></td><td class="py-3 px-4">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Berghem -->
+      <div class="mb-12">
+        <h3 class="font-serif text-xl text-warm-black mb-4">Locatie Berghem</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="border-b-2 border-taupe/20">
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Dag</th>
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Avond</th>
+              </tr>
+            </thead>
+            <tbody class="text-warm-muted">
+              <tr><td class="py-3 px-4 font-medium text-warm-black">Dinsdag</td><td class="py-3 px-4">18.15–18.45 <span class="text-xs text-taupe">(Techniekles)</span><br>19.00–20.00<br>20.00–21.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Valkenburcht -->
+      <div>
+        <h3 class="font-serif text-xl text-warm-black mb-4">Locatie Valkenburcht, Ravenstein</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="border-b-2 border-taupe/20">
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Dag</th>
+                <th class="text-left py-3 px-4 font-medium text-warm-black">Ochtend</th>
+              </tr>
+            </thead>
+            <tbody class="text-warm-muted">
+              <tr><td class="py-3 px-4 font-medium text-warm-black">Dinsdag</td><td class="py-3 px-4">10.45–11.45 <span class="text-xs text-taupe">(Stoel Pilates — alleen Zorgcoöperatie leden)</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20 bg-taupe-dark text-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-3xl md:text-4xl mb-6">Kennismaken met Pilates?</h2>
+      <p class="text-white/70 mb-8 leading-relaxed">De eerste kennismakingsles is gratis. Meld je aan en ontdek wat Pilates voor jou kan betekenen.</p>
+      <a href="contact.html#kennismaking" class="inline-block bg-white text-taupe-dark px-8 py-4 rounded-sm hover:bg-warm-cream transition-colors duration-200 cursor-pointer font-medium tracking-wide">Gratis Kennismakingsles</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warm-black text-white/70 py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <img src="images/logo-icon.png" alt="Pilates Ravenstein" class="h-12 rounded-full mb-4 brightness-0 invert opacity-70">
+          <p class="text-sm leading-relaxed">Professionele Pilates lessen in Ravenstein en Berghem.</p>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Lessen</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="lessen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Groepslessen</a></li>
+            <li><a href="lessen.html#prive" class="hover:text-white transition-colors duration-200 cursor-pointer">Privélessen</a></li>
+            <li><a href="lessen.html#senioren" class="hover:text-white transition-colors duration-200 cursor-pointer">Stoel Pilates</a></li>
+            <li><a href="lessen.html#bedrijven" class="hover:text-white transition-colors duration-200 cursor-pointer">Bedrijven</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Behandeling</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="massage.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Massage</a></li>
+            <li><a href="massage.html#babymassage" class="hover:text-white transition-colors duration-200 cursor-pointer">Babymassage cursus</a></li>
+            <li><a href="tarieven.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Tarieven</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Nieuwstraat 13, Ravenstein</li>
+            <li>Sportstraat 3, Berghem</li>
+            <li><a href="mailto:info@pilatesravenstein.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">info@pilatesravenstein.nl</a></li>
+            <li><a href="tel:+31613908486" class="hover:text-white transition-colors duration-200 cursor-pointer">06 13 908 486</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <p>&copy; 2025 Pilates Ravenstein. Alle rechten voorbehouden.</p>
+        <p>Gebouwd door <a href="https://www.code-lieshout.nl" target="_blank" rel="noopener" class="text-taupe-light hover:text-white transition-colors duration-200 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

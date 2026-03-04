@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage & Babymassage — Pilates Ravenstein</title>
+  <meta name="description" content="Professionele massage en Shantala babymassage cursus bij Pilates Ravenstein in Ravenstein.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="ace8f019-b3d6-4575-afe0-54f9a8deb7fc"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            taupe: { DEFAULT: '#8B7D6B', light: '#A89B8C', dark: '#6B5F50', accent: '#B5A48B' },
+            warm: { white: '#FAFAF7', cream: '#F5F0EB', black: '#2D2A26', muted: '#6B6560' }
+          },
+          fontFamily: { serif: ['Lora', 'serif'], sans: ['Raleway', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Raleway', sans-serif; color: #2D2A26; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Lora', serif; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .fade-in { opacity: 1; transform: none; transition: none; } }
+  </style>
+</head>
+<body class="bg-warm-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-taupe/10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+        <img src="images/logo-icon.png" alt="Pilates Ravenstein logo" class="h-10 md:h-12 rounded-full">
+        <span class="font-serif text-lg md:text-xl text-warm-black font-medium hidden sm:block">Pilates Ravenstein</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Home</a>
+        <a href="lessen.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Lessen</a>
+        <a href="massage.html" class="text-warm-black font-medium text-sm tracking-wide uppercase border-b-2 border-taupe cursor-pointer">Massage</a>
+        <a href="tarieven.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Tarieven</a>
+        <a href="contact.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Contact</a>
+        <a href="contact.html#kennismaking" class="bg-taupe text-white px-5 py-2.5 rounded-sm hover:bg-taupe-dark transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide">Gratis Proefles</a>
+      </div>
+      <button id="menuBtn" class="md:hidden cursor-pointer p-2" aria-label="Menu openen">
+        <svg class="w-6 h-6 text-warm-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-taupe/10 px-4 pb-4">
+      <a href="index.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Home</a>
+      <a href="lessen.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Lessen</a>
+      <a href="massage.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Massage</a>
+      <a href="tarieven.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Tarieven</a>
+      <a href="contact.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Contact</a>
+      <a href="contact.html#kennismaking" class="block mt-3 text-center bg-taupe text-white px-5 py-3 rounded-sm cursor-pointer font-medium">Gratis Proefles</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-28 md:pt-36 pb-12 md:pb-16 bg-warm-cream">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Behandeling</p>
+      <h1 class="font-serif text-4xl md:text-5xl text-warm-black mb-4">Massage</h1>
+      <p class="text-warm-muted max-w-2xl mx-auto leading-relaxed">Massage ondersteunt het lichaam en de geest om tot rust te komen.</p>
+    </div>
+  </section>
+
+  <!-- Massage -->
+  <section class="py-16 md:py-24 fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Massage vermindert stress, de oorzaak van 90% van alle ziektes.</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">Massage is al zo oud als de mensheid. We weten dat eten, drinken en onderdak nodig zijn om te blijven leven, maar beseffen vaak niet dat aanraking net zo belangrijk is.</p>
+        <p class="text-warm-muted leading-relaxed mb-6">Een massage ondersteunt het lichaam en de geest om tot rust te komen, zodat stress en lichamelijke klachten doorbroken kunnen worden. Door regelmatige massages wordt je weerstand tegen ziektes beter. Het versterkt je immuunsysteem.</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-warm-muted text-sm">Verbetert immuunsysteem</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-warm-muted text-sm">Minder stress</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-warm-muted text-sm">Je slaapt beter</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-warm-muted text-sm">Gelukshormoon komt vrij</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-warm-muted text-sm">Betere bloedsomloop</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-taupe flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-warm-muted text-sm">Betere concentratie</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="images/massage.jpg" alt="Massage bij Pilates Ravenstein" class="w-full rounded-sm shadow-lg" style="filter: grayscale(100%);" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Massage tarieven preview -->
+  <section class="py-12 md:py-16 bg-warm-cream fade-in">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <h3 class="font-serif text-2xl text-warm-black mb-8 text-center">Massage tarieven</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+          <p class="font-serif text-2xl text-warm-black mb-1">30 min</p>
+          <p class="text-taupe text-2xl font-medium">€ 40</p>
+        </div>
+        <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+          <p class="font-serif text-2xl text-warm-black mb-1">45 min</p>
+          <p class="text-taupe text-2xl font-medium">€ 55</p>
+        </div>
+        <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+          <p class="font-serif text-2xl text-warm-black mb-1">60 min</p>
+          <p class="text-taupe text-2xl font-medium">€ 65</p>
+        </div>
+        <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+          <p class="font-serif text-2xl text-warm-black mb-1">75 min</p>
+          <p class="text-taupe text-2xl font-medium">€ 72</p>
+        </div>
+      </div>
+      <p class="text-center mt-6 text-warm-muted text-sm">De massages worden gegeven op locatie Ravenstein.</p>
+    </div>
+  </section>
+
+  <!-- Babymassage -->
+  <section id="babymassage" class="py-16 md:py-24 fade-in">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <img src="images/babymassage.jpg" alt="Shantala babymassage cursus" class="w-full rounded-sm shadow-lg" style="filter: grayscale(100%);" loading="lazy">
+      </div>
+      <div class="order-1 md:order-2">
+        <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Cursus</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-warm-black mb-6">Shantala babymassage</h2>
+        <p class="text-warm-muted leading-relaxed mb-4">Babymassage werkt op de eerste plaats rustgevend en ontspannend. Niet alleen voor je baby ook voor jezelf. De oorsprong van deze massage techniek ligt in India, waar massage onderdeel is van de dagelijkse verzorging van baby's.</p>
+        <p class="text-warm-muted leading-relaxed mb-6">In de cursus wordt onder andere aandacht gegeven aan:</p>
+        <ul class="space-y-2 text-warm-muted text-sm">
+          <li class="flex items-start gap-2"><span class="text-taupe mt-1">•</span>De positieve invloeden van de massage op je baby</li>
+          <li class="flex items-start gap-2"><span class="text-taupe mt-1">•</span>De massage techniek</li>
+          <li class="flex items-start gap-2"><span class="text-taupe mt-1">•</span>Polariteits massage</li>
+          <li class="flex items-start gap-2"><span class="text-taupe mt-1">•</span>Het dragen van je kindje</li>
+          <li class="flex items-start gap-2"><span class="text-taupe mt-1">•</span>Darmkrampjes, verkoudheid & tandjes krijgen</li>
+          <li class="flex items-start gap-2"><span class="text-taupe mt-1">•</span>Massage olie en etherische olie</li>
+        </ul>
+        <div class="mt-6 p-4 bg-warm-cream rounded-sm">
+          <p class="text-warm-muted text-sm leading-relaxed">De cursus wordt gegeven in kleine groepjes (3-4 bijeenkomsten van ±60 min). Je partner mag meedoen. In samenwerking met Arons Zorg.</p>
+          <p class="text-warm-black font-medium mt-2">€ 110,00 <span class="text-warm-muted font-normal text-sm">incl. naslagwerk en een flesje olie</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arons Zorg -->
+  <section class="py-8 md:py-12 bg-warm-cream">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
+      <p class="text-warm-muted text-sm mb-4">In samenwerking met</p>
+      <img src="images/arons-zorg.jpeg" alt="Arons Zorg" class="h-12 md:h-16 mx-auto" loading="lazy">
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20 bg-taupe-dark text-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-3xl md:text-4xl mb-6">Een massage boeken?</h2>
+      <p class="text-white/70 mb-8 leading-relaxed">Neem contact op voor een afspraak. De massages worden gegeven op locatie Ravenstein.</p>
+      <a href="contact.html" class="inline-block bg-white text-taupe-dark px-8 py-4 rounded-sm hover:bg-warm-cream transition-colors duration-200 cursor-pointer font-medium tracking-wide">Neem contact op</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warm-black text-white/70 py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <img src="images/logo-icon.png" alt="Pilates Ravenstein" class="h-12 rounded-full mb-4 brightness-0 invert opacity-70">
+          <p class="text-sm leading-relaxed">Professionele Pilates lessen in Ravenstein en Berghem.</p>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Lessen</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="lessen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Groepslessen</a></li>
+            <li><a href="lessen.html#prive" class="hover:text-white transition-colors duration-200 cursor-pointer">Privélessen</a></li>
+            <li><a href="lessen.html#senioren" class="hover:text-white transition-colors duration-200 cursor-pointer">Stoel Pilates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Behandeling</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="massage.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Massage</a></li>
+            <li><a href="massage.html#babymassage" class="hover:text-white transition-colors duration-200 cursor-pointer">Babymassage cursus</a></li>
+            <li><a href="tarieven.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Tarieven</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Nieuwstraat 13, Ravenstein</li>
+            <li>Sportstraat 3, Berghem</li>
+            <li><a href="mailto:info@pilatesravenstein.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">info@pilatesravenstein.nl</a></li>
+            <li><a href="tel:+31613908486" class="hover:text-white transition-colors duration-200 cursor-pointer">06 13 908 486</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <p>&copy; 2025 Pilates Ravenstein. Alle rechten voorbehouden.</p>
+        <p>Gebouwd door <a href="https://www.code-lieshout.nl" target="_blank" rel="noopener" class="text-taupe-light hover:text-white transition-colors duration-200 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

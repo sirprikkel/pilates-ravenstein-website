@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarieven — Pilates Ravenstein</title>
+  <meta name="description" content="Tarieven voor Pilates groepslessen, privélessen, massage en babymassage cursus bij Pilates Ravenstein.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="ace8f019-b3d6-4575-afe0-54f9a8deb7fc"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            taupe: { DEFAULT: '#8B7D6B', light: '#A89B8C', dark: '#6B5F50', accent: '#B5A48B' },
+            warm: { white: '#FAFAF7', cream: '#F5F0EB', black: '#2D2A26', muted: '#6B6560' }
+          },
+          fontFamily: { serif: ['Lora', 'serif'], sans: ['Raleway', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Raleway', sans-serif; color: #2D2A26; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Lora', serif; }
+  </style>
+</head>
+<body class="bg-warm-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-taupe/10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+        <img src="images/logo-icon.png" alt="Pilates Ravenstein logo" class="h-10 md:h-12 rounded-full">
+        <span class="font-serif text-lg md:text-xl text-warm-black font-medium hidden sm:block">Pilates Ravenstein</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Home</a>
+        <a href="lessen.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Lessen</a>
+        <a href="massage.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Massage</a>
+        <a href="tarieven.html" class="text-warm-black font-medium text-sm tracking-wide uppercase border-b-2 border-taupe cursor-pointer">Tarieven</a>
+        <a href="contact.html" class="text-taupe-dark hover:text-warm-black transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide uppercase">Contact</a>
+        <a href="contact.html#kennismaking" class="bg-taupe text-white px-5 py-2.5 rounded-sm hover:bg-taupe-dark transition-colors duration-200 cursor-pointer font-medium text-sm tracking-wide">Gratis Proefles</a>
+      </div>
+      <button id="menuBtn" class="md:hidden cursor-pointer p-2" aria-label="Menu openen">
+        <svg class="w-6 h-6 text-warm-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-taupe/10 px-4 pb-4">
+      <a href="index.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Home</a>
+      <a href="lessen.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Lessen</a>
+      <a href="massage.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Massage</a>
+      <a href="tarieven.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Tarieven</a>
+      <a href="contact.html" class="block py-3 text-warm-black font-medium cursor-pointer border-b border-taupe/5">Contact</a>
+      <a href="contact.html#kennismaking" class="block mt-3 text-center bg-taupe text-white px-5 py-3 rounded-sm cursor-pointer font-medium">Gratis Proefles</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-28 md:pt-36 pb-12 md:pb-16 bg-warm-cream">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <p class="text-taupe font-sans text-sm tracking-[0.2em] uppercase mb-4">Kosten</p>
+      <h1 class="font-serif text-4xl md:text-5xl text-warm-black mb-4">Tarieven</h1>
+    </div>
+  </section>
+
+  <!-- Groepslessen tarieven -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-serif text-2xl md:text-3xl text-warm-black mb-8">Pilates groepslessen</h2>
+      <div class="space-y-0 border-t border-taupe/20">
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <div>
+            <p class="text-warm-black font-medium">Kennismakingsles</p>
+            <p class="text-warm-muted text-sm">1 persoon</p>
+          </div>
+          <p class="text-taupe-dark font-serif text-xl font-medium">Gratis</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <div>
+            <p class="text-warm-black font-medium">Proefserie</p>
+            <p class="text-warm-muted text-sm">3 lessen — 1 persoon</p>
+          </div>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 27,50</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Losse les</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 20,00</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">10 lessen strippenkaart</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 107,50</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">20 lessen strippenkaart</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 210,00</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Gezinskaart 20 lessen</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 210,00</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Groepsles op locatie</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">Op aanvraag</p>
+        </div>
+      </div>
+
+      <h3 class="font-serif text-xl text-warm-black mt-12 mb-6">Privé & Duo lessen</h3>
+      <div class="space-y-0 border-t border-taupe/20">
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Privéles</p>
+          <p class="text-taupe-dark font-serif text-lg font-medium">1 strip / kwartier</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Privéles avond of weekend</p>
+          <p class="text-taupe-dark font-serif text-lg font-medium">1½ strip / kwartier</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Privéles op locatie</p>
+          <p class="text-taupe-dark font-serif text-lg font-medium">Op aanvraag</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Duo les</p>
+          <p class="text-taupe-dark font-serif text-lg font-medium">1½ strip / kwartier (per duo)</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Duo les avond of weekend</p>
+          <p class="text-taupe-dark font-serif text-lg font-medium">2 strips / kwartier (per duo)</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">Duo les op locatie</p>
+          <p class="text-taupe-dark font-serif text-lg font-medium">Op aanvraag</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Massage tarieven -->
+  <section class="py-16 md:py-24 bg-warm-cream">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-serif text-2xl md:text-3xl text-warm-black mb-8">Massage</h2>
+      <div class="space-y-0 border-t border-taupe/20">
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">30 minuten</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 40,00</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">45 minuten</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 55,00</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">60 minuten</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 65,00</p>
+        </div>
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <p class="text-warm-black font-medium">75 minuten</p>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 72,00</p>
+        </div>
+      </div>
+
+      <h2 class="font-serif text-2xl md:text-3xl text-warm-black mt-16 mb-8">Cursus Shantala babymassage</h2>
+      <div class="space-y-0 border-t border-taupe/20">
+        <div class="flex justify-between items-center py-4 border-b border-taupe/10">
+          <div>
+            <p class="text-warm-black font-medium">Volledige cursus</p>
+            <p class="text-warm-muted text-sm">Incl. naslagwerk en een flesje olie</p>
+          </div>
+          <p class="text-taupe-dark font-serif text-xl font-medium">€ 110,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cadeaubon -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-2xl md:text-3xl text-warm-black mb-4">Cadeaubon</h2>
+      <p class="text-warm-muted leading-relaxed mb-8">Het is ook mogelijk om een les, een massage of de Shantala babymassage cursus cadeau te doen. Neem contact op via het contactformulier om een cadeaubon te bestellen.</p>
+      <a href="contact.html" class="inline-block bg-taupe text-white px-8 py-4 rounded-sm hover:bg-taupe-dark transition-colors duration-200 cursor-pointer font-medium tracking-wide">Bestel een cadeaubon</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warm-black text-white/70 py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <img src="images/logo-icon.png" alt="Pilates Ravenstein" class="h-12 rounded-full mb-4 brightness-0 invert opacity-70">
+          <p class="text-sm leading-relaxed">Professionele Pilates lessen in Ravenstein en Berghem.</p>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Lessen</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="lessen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Groepslessen</a></li>
+            <li><a href="lessen.html#prive" class="hover:text-white transition-colors duration-200 cursor-pointer">Privélessen</a></li>
+            <li><a href="lessen.html#senioren" class="hover:text-white transition-colors duration-200 cursor-pointer">Stoel Pilates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Behandeling</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="massage.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Massage</a></li>
+            <li><a href="massage.html#babymassage" class="hover:text-white transition-colors duration-200 cursor-pointer">Babymassage cursus</a></li>
+            <li><a href="tarieven.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Tarieven</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-white text-lg mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Nieuwstraat 13, Ravenstein</li>
+            <li>Sportstraat 3, Berghem</li>
+            <li><a href="mailto:info@pilatesravenstein.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">info@pilatesravenstein.nl</a></li>
+            <li><a href="tel:+31613908486" class="hover:text-white transition-colors duration-200 cursor-pointer">06 13 908 486</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <p>&copy; 2025 Pilates Ravenstein. Alle rechten voorbehouden.</p>
+        <p>Gebouwd door <a href="https://www.code-lieshout.nl" target="_blank" rel="noopener" class="text-taupe-light hover:text-white transition-colors duration-200 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => { document.getElementById('mobileMenu').classList.toggle('hidden'); });
+  </script>
+</body>
+</html>
